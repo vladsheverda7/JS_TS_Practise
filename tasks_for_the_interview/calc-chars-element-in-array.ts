@@ -17,7 +17,7 @@ let calculateSymbolsInString = (givenString: string) => {
     return actualString;
 };
 
-let compareStrings = (str1: string, str2: string) => {
+let compareStrings = (str1: string, str2: string): boolean => {
     return str1 == str2;
 };
 

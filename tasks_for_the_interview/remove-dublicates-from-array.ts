@@ -14,7 +14,7 @@ function removeDuplicatesFromArray(arrayWithDuplicates: number[]): number[] {
     return arrayWithDuplicates;
 }
 
-const compareArrays = (arr1: number[], arr2: number[]) => {
+const compareArrays = (arr1: number[], arr2: number[]): boolean => {
     return arr1.toString() === arr2.toString();
 };
 
@@ -31,7 +31,7 @@ function removeDuplicatesFromArray1(arrayWithDuplicates: number[]): number[] {
     return [...new Set(arrayWithDuplicates)];
 }
 
-const compareArrays1 = (arr1: number[], arr2: number[]) => {
+const compareArrays1 = (arr1: number[], arr2: number[]): boolean => {
     return arr1.length === arr2.length && arr1.every((value, index) => value === arr2[index]);
 };
 
