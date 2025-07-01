@@ -5,6 +5,8 @@ export function disemvowel(str: string) {
         for (let j = 0; j < listofVowel.length; j++) {
             if (strArr[i] === listofVowel[j]) {
                 strArr.splice(i, 1);
+                i--;
+                break;
             }
         }
     }
