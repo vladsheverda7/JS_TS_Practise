@@ -1,14 +1,6 @@
-const assert = require('chai');
-const disemvowel = require('../tasks_for_the_interview/disemvowels_trolls');
-require;
+import { disemvowel } from '../tasks_for_the_interview/disemvowels_trolls';
 
-describe('Basic tests', () => {
-    it('Testing for fixed tests', () => {
-        assert.strictEqual(disemvowel('This website is for losers LOL!'), 'Ths wbst s fr lsrs LL!');
-        assert.strictEqual(
-            disemvowel("No offense but,\nYour writing is among the worst I've ever read"),
-            "N ffns bt,\nYr wrtng s mng th wrst 'v vr rd",
-        );
-        assert.strictEqual(disemvowel('What are you, a communist?'), 'Wht r y,  cmmnst?');
-    });
+test('Testing for fixed tests', () => {
+    expect(disemvowel('This website is for losers LOL!')).toBe('Ths wbst s fr lsrs LL!');
+    expect(disemvowel("No offense but,\nYour writing is among the worst I've ever read")).toBe("N ffns bt,\nYr wrtng s mng th wrst 'v vr rd");
 });

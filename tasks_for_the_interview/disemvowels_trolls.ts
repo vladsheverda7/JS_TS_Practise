@@ -10,7 +10,3 @@ export function disemvowel(str: string) {
     }
     return strArr.join('');
 }
-
-console.log(disemvowel('This website is for losers LOL!'));
-console.log(disemvowel('moDnSTYptGgB memZrtYyfxfK dH'));
-console.log(disemvowel('EgBMWiZiKXUFURkcNm NzEnzICN cUDwOooIAUihyA KBgkwapHHaUf jJidTdZ HoAf eXQieuGuOPxXnDAJdrTS'));
