@@ -1,10 +1,9 @@
 export function buySellStock(prices: number[]): number {
     let profit = 0;
+    let minPriceIndex = 0;
     let minPrice = Number.MAX_VALUE;
     let maxPrice = Number.MIN_VALUE;
 
-    let minPriceIndex = 0;
-    let maxPriceIndex = 0;
     for (let i = 0; i < prices.length; i++) {
         if (prices[i] < minPrice) {
             minPrice = prices[i];
@@ -14,19 +13,17 @@ export function buySellStock(prices: number[]): number {
             return 0;
         }
     }
+
     for (let i = minPriceIndex; i < prices.length; i++) {
         if (prices[i] > maxPrice) {
             maxPrice = prices[i];
-            maxPriceIndex = i;
         }
     }
-    profit = maxPrice - minPrice;
-    return profit;
-    //return `Profit is ${profit} min price = ${minPrice} and min price index = ${minPriceIndex}`;
-}
 
-console.log(buySellStock([7, 1, 5, 3, 6, 4]));
-console.log(buySellStock([7, 6, 4, 3, 1]));
+    profit = maxPrice - minPrice;
+
+    return profit;
+}
 
 // Example 1:
 
