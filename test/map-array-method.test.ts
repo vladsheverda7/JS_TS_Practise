@@ -1,4 +1,4 @@
-import { doubleArrayElements, returnNameArray } from '../tasks_for_the_interview/map-array-method';
+import { doubleArrayElements, returnNameArray } from '../array_basic_methods/map-array-method';
 
 describe('tests for map method', () => {
     test('Check doubling of each array element', () => {
