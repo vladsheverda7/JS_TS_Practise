@@ -1,3 +1,5 @@
+// Return ust searches through the elements, returns nothing
+
 export function getIndexAndElement(arr: string[]) {
     arr.forEach(el => {
         console.log(`${el}: ${arr.indexOf(el)}`);

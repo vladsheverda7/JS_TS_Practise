@@ -1,3 +1,5 @@
+//Map converts each element of the array and returns a new array
+
 export function doubleArrayElements(initailArr: number[]): number[] {
     const actualArray: number[] = initailArr.map(x => x * 2);
     return actualArray;

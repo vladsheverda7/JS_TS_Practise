@@ -1,3 +1,5 @@
+// reduce summarises an array to a single value - often used for sums, counts, etc.
+
 export function findArraySum(arr: number[]): number {
     const sum = arr.reduce((acc, value) => acc + value, 0);
     return sum;
