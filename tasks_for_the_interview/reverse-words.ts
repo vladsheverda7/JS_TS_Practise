@@ -6,5 +6,3 @@ export function reverseWords(str: string): string {
     }
     return stringArray.join(' ');
 }
-
-reverseWords('The quick ');
